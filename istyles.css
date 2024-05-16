@@ -1,0 +1,180 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #A7C7E7;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Styles */
+.nav {
+    background-color: #CCCCFF;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Welcome Section Styles */
+.welcome-section {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url("https://www.facebook.com/photo.php?fbid=3556873471291436&set=pb.100009064544358.-2207520000&type=3");
+    background-size: cover;
+    color: #fff;
+    background-color: #4FC1E9;
+}
+
+.welcome-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: textAnimation 5s ease-in-out infinite;
+}
+
+.welcome-section p {
+    font-size: 24px;
+}
+
+/* Projects Section Styles */
+.projects-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.projects-section-header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+.project-image {
+    width: 100%; /* Adjust image width to fill the container */
+    max-height: 200px; /* Adjust the maximum height of the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 5%;
+}
+.project:hover {
+    transform: scale(1.05);
+}
+
+
+.project-title {
+    font-size: 24px;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact-section-header h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-details {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.contact-details:hover {
+    transform: scale(1.2);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .welcome-section h1 {
+        font-size: 36px;
+    }
+
+    .welcome-section p {
+        font-size: 20px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .contact-section-header h2 {
+        font-size: 36px;
+    }
+}
+
+/* Keyframe Animation */
+@keyframes textAnimation {
+    0% {
+        width: 80%;
+        color: red;
+    }
+    50% {
+        width: 50%;
+        color: aquamarine;
+    }
+    100% {
+        width: 100%;
+    }
+}
